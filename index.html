@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em manutenção</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #ccc;
+        }
+
+        .loader {
+            margin: 30px auto;
+            border: 4px solid #222;
+            border-top: 4px solid #fff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🚧 Site em manutenção</h1>
+
+        <div class="loader"></div>
+
+        <p>
+            O desenvolvedor dessa aplicação está realizando alterações no seu código e o site ficará disponível
+            assim que as alterações sejam implementadas no servidor.
+            Isso pode demorar um pouco.
+        </p>
+
+        <footer>
+            Aguarde alguns minutos e atualize a página.
+        </footer>
+    </div>
+</body>
+</html>
